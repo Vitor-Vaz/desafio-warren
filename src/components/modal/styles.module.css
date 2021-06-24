@@ -1,0 +1,138 @@
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: white;
+    position: absolute;
+    color: black;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    animation: modal .3s;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.box h2{
+    font-size: 2rem;
+}
+
+.buttonClose{
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #2E2D33;
+    color: #FFFFFF;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.buttonClose:hover{
+    color:#2E2D33;
+    background-color: #FFFFFF;
+    border: 1px solid #2E2D33;
+}
+
+.statusBox{
+    width: 80%;
+    height: auto;
+}
+
+
+.loadBar{
+    height: 2.5rem;
+    width: 100%;
+    background-color: #2E2D33;
+    border-radius: 10px;
+}
+
+.fullloadedBar{
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background-color: #E02B57;
+    border-radius: 10px;
+}
+
+.halfLoadedBar{
+    z-index: 10;
+    height: 100%;
+    width: 50%;
+    background-color: #E02B57;
+    border-radius: 10px;
+}
+
+.noloadedBar{
+    z-index: 10;
+    height: 100%;
+    width: 10%;
+    background-color: #E02B57;
+    border-radius: 10px;
+}
+
+.statusSpans{
+    height: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.dataTransfer{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxFrom, .boxTo{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.boxFrom h3, .boxTo h3{
+    width: 100%;
+    text-align: left;
+
+}
+
+
+@media screen and (max-width: 768px){
+    .box{
+        width: 90%;
+    }
+}
+
+
+
+

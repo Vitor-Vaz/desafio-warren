@@ -1,0 +1,6 @@
+.footer{
+    margin: 0;
+    grid-area: footer;
+    background-color: #1C1B1F;
+    color: #FFFFFF;
+}
