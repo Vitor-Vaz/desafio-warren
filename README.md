@@ -9,6 +9,7 @@ O desafio será implementar uma tela de lista de transações apresentando os pr
 - Modal contendo os detalhes da transação ✅
 <br>
  <br>
+ 
 ----
 
 ## Como Rodar o projeto localmente?
@@ -18,8 +19,11 @@ O desafio será implementar uma tela de lista de transações apresentando os pr
  - Após isso, digite no terminal `yarn start` na qual irá abrir uma janela no seu navegador padrão na porta local 3000.
 <br>
  <br>
+ 
  ---
+ 
  ## Desafios
+ 
 <br>
  <strong> - Lista de transações agrupadas por data </strong> 
  <br>
